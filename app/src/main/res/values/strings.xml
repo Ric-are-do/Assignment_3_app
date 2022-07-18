@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">S60361255</string>
+    <string name="txtMarathon">Marathon Race</string>
+    <string name="txtDescription">MarathonImage</string>
+    <string name="TimeComple">How long did you take to complete the marathon?</string>
+    <string name="txtHours">Hours :</string>
+    <string name="txtMinutes">Minutes :</string>
+    <string name="placeHolderHours">Time in hours</string>
+    <string name="placeHolderMinutes">Time in minutes</string>
+    <string name="Submit">Submit</string>
+    <string name="Gold">Congratulations, You got Gold</string>
+    <string name="Silver">Congratulations, You got Silver</string>
+    <string name="Bronze">Congratulations, You got Bronze</string>
+    <string name="Results">Results :</string>
+    <string name="imgDescription">Image of medal</string>
+    <string name="btnStats">Go to stats </string>
+    <string name="btnWeightchange">Weight Change</string>
+    <string name="RaceDescription">compare your weight before and after the marathon.  </string>
+    <string-array name="numbers">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+    </string-array>
+    <string name="before">Weight before</string>
+    <string name="after">Weight after</string>
+    <string name="txtUnits">Are you using killograms or Pounds? (you can change the resilt by selecting a different option after its been calculated</string>
+    <string name="StatsDescription">We can all be better, lets look at listing your average race times for your past few races and see some data</string>
+</resources>

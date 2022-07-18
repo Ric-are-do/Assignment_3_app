@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Race_friends_activity_start">
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/txtMarathon"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRaceDescription"
+        android:layout_width="411dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/RaceDescription"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="256dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMeasure">
+
+        <RadioButton
+            android:id="@+id/radioKG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use Killograms "
+            android:checked="true"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/radiolbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use Pounds"
+            android:textAlignment="center" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/WeightBefore"
+        android:layout_width="249dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/WeightAfter"
+        android:layout_width="244dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/before"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/after"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeightBefore" />
+
+    <TextView
+        android:id="@+id/weightChange"
+        android:layout_width="347dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:text="Results"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeightAfter" />
+
+    <Button
+        android:id="@+id/btnCalcWeight"
+        android:layout_width="231dp"
+        android:layout_height="70dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightChange" />
+
+    <TextView
+        android:id="@+id/txtMeasure"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/txtUnits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRaceDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
